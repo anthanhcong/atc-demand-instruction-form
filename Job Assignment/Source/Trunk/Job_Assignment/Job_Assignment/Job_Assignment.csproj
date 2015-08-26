@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF72FDE3-879E-4F23-A4BB-C723354D8DDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Job_Assignment</RootNamespace>
+    <AssemblyName>Job_Assignment</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>JAS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MasterDatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\MultiColumnComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\RoleHelper.cs" />
+    <Compile Include="MasterDatabase\MDB_011_Employee_Working_on_Sunday\MDB_011.Employee_Working_on_Sunday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ApplicationConstant.cs" />
+    <Compile Include="Model\ApplicationSession.cs" />
+    <Compile Include="Helper\HashHelper.cs" />
+    <Compile Include="Report\R_007_Emlpoyee_In_WST\R_007_Emlpoyee_In_WST_Count_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_008_Employee_Current_On_Line\R_008_Employee_Current_On_Line_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_009_Line_Status\R_009_Line_Status_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_009_Line_Status\R_009_Line_Status_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_009_Line_Status\R_009_Line_Status_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmChangePasswordFirstLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmChangePasswordFirstLogin.Designer.cs">
+      <DependentUpon>frmChangePasswordFirstLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SecurityManager.cs" />
+    <Compile Include="Security\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmManageUser.Designer.cs">
+      <DependentUpon>frmManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DataGridViewAutoCompleteTextboxColumn.cs" />
+    <Compile Include="Component\DataGridViewDateTimeCell.cs" />
+    <Compile Include="Component\DataGridViewDateTimeColumn.cs" />
+    <Compile Include="Component\DataGridViewMultiColumnComboBoxCell.cs" />
+    <Compile Include="Component\DataGridViewMultiColumnComboBoxColumn.cs" />
+    <Compile Include="Component\DataGridViewMultiColumnComboBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\DataGridViewTimeCell.cs" />
+    <Compile Include="Component\DataGridViewTimeColumn.cs" />
+    <Compile Include="Component\DateTimePickerEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\TimeEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dao\MSSqlDbFactory.cs" />
+    <Compile Include="FeatureList\FeatureList_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureList\funtionAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureList\LeaveRegister_API.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureList\LoadConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicationSetting.cs" />
+    <Compile Include="Helper\DataGridViewHelper.cs" />
+    <Compile Include="Helper\ExcelHelper.cs" />
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Helper\Utils.cs" />
+    <Compile Include="MasterDatabase\MDB_002_Empl_Skill\Empl_Skill_API.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_005_LineWorkStationMapping\MDB_005_LineWorkStationMapping_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_001_Skill_List_Tbl\MDB_001_Skill_List_Skill_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_002_Empl_Skill\MDB_002_Empl_Skill_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_003_Line_Desciption\MDB_003_Line_Desciption_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_004_LineSkillRequest\MDB_004_LineSkillRequest_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_006_ShiftDecription\MDB_006_ShiftDecription_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_006_ShiftDecription\ShiftDecription_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_007_FixPosition\MDB_007_FixPosition_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_008_SpecialLine\MDB_008_SpecialLine_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_009_LineLayout\MDB_009_LineLayout_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_009_LineLayout\MDB_009_LineLayout_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_009_LineLayout\MDB_009_LineLayout_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDatabase\MDB_010_Leave Info\MDB_010_Leave_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P005_EmplWorkingPlan\P_005_EmplWorkingPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P005_EmplWorkingPlan\P_005_EmplWorkingPlan_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P005_EmplWorkingPlan\P_005_EmplWorkingPlan_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P007_P008_Tracking\P007_P008_ucTracking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\P007_P008_Tracking\P007_P008_ucTracking.Designer.cs">
+      <DependentUpon>P007_P008_ucTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\P007_P008_Tracking\TrackingController.cs" />
+    <Compile Include="Process\P_000_Kitting_Database\P_000_Kitting_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_001_InputFromPlanner\P_001_InputFromPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_001_InputFromPlanner\P_001_InputFromPlanner_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_001_InputFromPlanner\P_001_InputFromPlanner_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_002_PlanByDate\ShiftSummaryContract.cs" />
+    <Compile Include="Process\P_002_PlanByDate\PlanByDateController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Process\P_002_PlanByDate\P_002_PlanByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_002_PlanByDate\P_002_PlanByDate_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_002_PlanByDate\ShiftInformationContract.cs" />
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\AddFRU\Add_FRU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\AddFRU\Add_FRU.Designer.cs">
+      <DependentUpon>Add_FRU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\EmployeeAssignment.cs" />
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\EmployeeAssignmentReport.cs" />
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\EmployeeAssignment_ProrityTable.cs" />
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\EmployeeAssignment_ProrityTableColumn.cs" />
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\NewEmployeeAssignment.cs" />
+    <Compile Include="Process\P_004_Production_Plan_Details\P_004_ProductionPlanDetail_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_004_Production_Plan_Details\P_004_Production_Plan_Details_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_004_Production_Plan_Details\P_004_Production_Plan_Details_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\P_003_KeHoachSXTheoLine_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\P_003_KeHoachSXTheoLine_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoTram\KHSXTheoWS_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoTram\KHSX_WS_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoTram\KHSX_WS_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoTram\P_003_KeHoachSanXuatTheoTram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_003_KeHoachSanXuatTheoLine\P_003_KeHoachSanXuatTheoLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_007_TrackingView\P007_Tracking_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\P_007_TrackingView\P_007_Tracking_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\P007_P008_Tracking\P007_P008_ucTracking.resx">
+      <DependentUpon>P007_P008_ucTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\P_003_KeHoachSanXuatTheoLine\AddFRU\Add_FRU.resx">
+      <DependentUpon>Add_FRU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Process\P_007_TrackingView\P_007_TrackingView_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_001_Tracking_Review\R_001_Tracking_View_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_002_Skill_Mapping_Review\R_002_Skill_Mapping_View_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_004_TrackingKHTT\R004_TrackingKHTT_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_004_TrackingKHTT\R004_TrackingKHTT_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_004_TrackingKHTT\R004_TrackingKHTT_Int.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_005_Employee_Review\R_005_Employee_Review_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_005_Employee_Review\R_005_Employee_Review_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_005_Employee_Review\R_005_Employee_Review_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_006_TrackingTT_PlanTL\R_006_TrackingTT_PlanTL_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_006_TrackingTT_PlanTL\R_006_TrackingTT_PlanTL_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_006_TrackingTT_PlanTL\R_006_TrackingTT_PlanTL_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_007_Emlpoyee_In_WST\R_007_Emlpoyee_In_WST_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_007_Emlpoyee_In_WST\R_007_Emlpoyee_In_WST_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\R_007_Emlpoyee_In_WST\R_007_Emlpoyee_In_WST_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmNewUser.Designer.cs">
+      <DependentUpon>frmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInfo.cs" />
+    <Compile Include="Security\UserRole.cs" />
+    <Compile Include="Test\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Test\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\DataGridViewAutoFilter.dll" />
+    <Content Include="DLL\MasterDatabase.dll" />
+    <Content Include="DLL\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="DLL\Office.dll" />
+    <Content Include="JAS.ico" />
+    <None Include="Resource\Images\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

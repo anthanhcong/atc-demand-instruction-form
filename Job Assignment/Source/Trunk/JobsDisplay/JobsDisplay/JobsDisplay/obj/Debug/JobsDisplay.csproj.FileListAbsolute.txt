@@ -1,0 +1,14 @@
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\bin\Debug\JobsDisplay.exe
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\bin\Debug\JobsDisplay.pdb
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\bin\Debug\DataGridViewAutoFilter.dll
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\bin\Debug\MasterDatabase.dll
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\ResolveAssemblyReference.cache
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.Form1.resources
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\LayoutControl.frmMaster.resources
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.Properties.Resources.resources
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.WorkStation_Select.resources
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.csproj.GenerateResource.Cache
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.exe
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.pdb
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\obj\Debug\JobsDisplay.Statistics.EmptyWST_vs_Employee.resources
+D:\DVP\HR_Tool\OutBound_Form\Job Assignment\Source\Trunk\JobsDisplay\JobsDisplay\JobsDisplay\bin\Debug\JobsDisplay.exe.config

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="JobsDisplay.exe" version="1.0.0.0" publicKeyToken="1d6671146d8abfd2" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="1392495957.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="JobsDisplay" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="JobsDisplay.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Interop.Excel" version="14.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Vbe.Interop" version="14.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="office" version="14.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataGridViewAutoFilter.dll" size="23552">
+      <assemblyIdentity name="DataGridViewAutoFilter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>T6VUcWAYFktxXTea9yzfprk9OWc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JobsDisplay.exe" size="209408">
+      <assemblyIdentity name="JobsDisplay" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KpdI1L3T0bXH5jeZq6D7NSN0yf4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MasterDatabase.dll" size="64000">
+      <assemblyIdentity name="MasterDatabase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>gpqFkLL2zBwWYgrpSlGolysa3FE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="1392495957.ico" size="35357">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2ia8Ytsae+FFXG6BFnhsRe8qKDY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JobsDisplay.exe.config" size="120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8ftcJLBvUoWhkXPJxPg06pDsU2M=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DL\knguyen" issuerKeyHash="d65916dba23727a83f88ff3c3026368a0fcc940d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>t1udZ4K9YAEJImQFFmsNQINDyIQ=</DigestValue></Reference></SignedInfo><SignatureValue>Trc9iDYtx7Wt6U6GCFK0faoh2wy2oJNc78v+HMK78lOZGrMycq66lcI13SUFur3WudyiwjSHX6sRR8JDFd15P61c93LMlmZOfEyVWR82gHq0leaYQQMNM1X7rAh+AJEr6PDdFwsYdY0IsSZx0IftxJ0lW0NfpZhkyNmGvTa0kN4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5vv7oODu7GPhFk2eL+375aooBQAOLKMqpo3uNMetSn239Fc7pT1BQynJRqu9NaiGLz2JYXj0yuHBdC15D+4mPjWsrLhQ72epjaDglH+0K1YK49ymOeOktXEjcD/8naxkP9gWOGYJKVQTCMJRQmMMxWhSslJNSL+LfsMJuk2Q0uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="84c84383400d6b16056422090160bd82679d5bb7" Description="" Url=""><as:assemblyIdentity name="JobsDisplay.exe" version="1.0.0.0" publicKeyToken="1d6671146d8abfd2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DL\knguyen</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>oLTve8lbNWePebCAp30eopc6gj8=</DigestValue></Reference></SignedInfo><SignatureValue>cW+e9EuTNV+eyG5nVec/EAYwfZphphuqTWGJ2YdtESPvbWH2ndV7nwT8N5JGz22qNQA3mfZQiE7/6G+BLoLps83kGft9fHIys8NSHQPTkFm3pbeywgpDRnZpjygonRnN9MxlNEEjm/kzs5h0c04yqsFg2YMolpISfQtaQxFEIVM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5vv7oODu7GPhFk2eL+375aooBQAOLKMqpo3uNMetSn239Fc7pT1BQynJRqu9NaiGLz2JYXj0yuHBdC15D+4mPjWsrLhQ72epjaDglH+0K1YK49ymOeOktXEjcD/8naxkP9gWOGYJKVQTCMJRQmMMxWhSslJNSL+LfsMJuk2Q0uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQLIu36H77x7dPCIXhsivucjANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQARABMAFwAawBuAGcAdQB5AGUAbjAeFw0xNTA4MDcwMTE2MDBaFw0xNjA4MDYwNzE2MDBaMB8xHTAbBgNVBAMeFABEAEwAXABrAG4AZwB1AHkAZQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDm+/ug4O7sY+EWTZ4v7fvlqigFAA4soyqmje40x61Kfbf0VzulPUFDKclGq701qIYvPYlhePTK4cF0LXkP7iY+NaysuFDvZ6mNoOCUf7QrVgrj3KY546S1cSNwP/ydrGQ/2BY4ZgkpVBMIwlFCYwzFaFKyUk1Iv4t+wwm6TZDS6QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAJnTVxPftdkGGNbxiJM2tX89uM4TWsAUoX64cXq8d+12aVHVOo8Qky6/uLPFKzFAveL8xSG2BvZpSy9nJdrI12Ur1J8ZXootQm0pkuLWirI67R+jzToU9n67ngEzgvB4StTuw6uZf0HqIGTS50kBCRY+zPgR5a0hRvMM/UJaPYlm</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC812A65-BC83-43E8-AA80-179204D3584A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobsDisplay</RootNamespace>
+    <AssemblyName>JobsDisplay</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <ApplicationIcon>1392495957.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>E5B8192909BF9BE4E5D050B5EC5CE33A457354BD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>JobsDisplay_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>API\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="MasterDatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>API\MasterDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>API\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>API\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\MSSqlDbFactory.cs" />
+    <Compile Include="Empl_DB\Empl_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureList\funtionAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureList\LoadConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Format.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmInfo.designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutController\frmInfoLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmInfoLabel.designer.cs">
+      <DependentUpon>frmInfoLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutController\frmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmMaster.designer.cs">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutController\LayoutCtrl.cs" />
+    <Compile Include="LayoutController\Line.cs" />
+    <Compile Include="LayoutController\LineCollection.cs" />
+    <Compile Include="LayoutController\LineData.cs" />
+    <Compile Include="LayoutController\LineLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LayoutController\LineLabel_DTO.cs" />
+    <Compile Include="LayoutController\LinesColletion_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\LayoutControlSetting.cs" />
+    <Compile Include="LayoutController\WST.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LayoutController\WST_DTO.cs" />
+    <Compile Include="LayoutController_MDB\MDB_009_LineLayout_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmMasterLineStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutController\frmMasterLineStatus.Designer.cs">
+      <DependentUpon>frmMasterLineStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicationSession.cs" />
+    <Compile Include="PortSetting\PortSetting_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortSetting\PortSetting_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutController\frmMaster.resx">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutController\frmMasterLineStatus.resx">
+      <DependentUpon>frmMasterLineStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\EmptyWST_vs_Employee.resx">
+      <DependentUpon>EmptyWST_vs_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WST_Select\WorkStation_Select.resx">
+      <DependentUpon>WorkStation_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="R_001_Tracking_Review\R_001_Tracking_View_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialControl\Serial_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialControl\Serial_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialControl\Serial_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\EmployeeAssignment.cs" />
+    <Compile Include="Statistics\EmptyWST_vs_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\EmptyWST_vs_Employee.designer.cs">
+      <DependentUpon>EmptyWST_vs_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\MSSqlDbFactory.cs" />
+    <Compile Include="TableColumn\EmployeeAssignment_ProrityTableColumn.cs" />
+    <Compile Include="Tracking\Tracking_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking\Tracking_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking\Tracking_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WST_Select\WorkStation_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WST_Select\WorkStation_Select.Designer.cs">
+      <DependentUpon>WorkStation_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YourJobs\YourJobs_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YourJobs\YourJobs_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1392495957.ico" />
+    <Content Include="iconLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
