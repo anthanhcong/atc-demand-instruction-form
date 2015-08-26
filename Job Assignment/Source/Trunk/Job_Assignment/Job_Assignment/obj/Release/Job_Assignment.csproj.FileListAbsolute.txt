@@ -1,0 +1,16 @@
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\Job_Assignment.exe.config
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\Job_Assignment.exe
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\Job_Assignment.pdb
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\DataGridViewAutoFilter.dll
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\MasterDatabase.dll
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\Microsoft.Office.Interop.Excel.dll
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\bin\Release\Office.dll
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\ResolveAssemblyReference.cache
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.Form1.resources
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.P007_P008_ucTracking.resources
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\AddFRU.Add_FRU.resources
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.Properties.Resources.resources
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.Test.UserControl1.resources
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.csproj.GenerateResource.Cache
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.exe
+G:\DVP\OutBound_Form\Job Assignment\Source\Trunk\Job_Assignment\Job_Assignment\obj\Release\Job_Assignment.pdb
